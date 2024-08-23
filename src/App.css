@@ -24,6 +24,7 @@
   text-align: center;
   display: inline-block;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .connect-btn:hover {
@@ -46,6 +47,71 @@
   padding: 10px 20px;
   text-align: center;
   margin-top: 20px;
+  width: 300px;
+}
+
+.flip-btn {
+  background-color: #28a745;
+  color: #ffffff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-align: center;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.flip-btn:hover {
+  background-color: #1e7e34;
+  transform: scale(1.05);
+}
+
+.flip-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(40, 167, 69, 0.5);
+}
+
+.result {
+  color: #007bff;
+  background-color: #eafaf1;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  padding: 15px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+select {
+  background-color: #ffffff;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  color: #495057;
+  cursor: pointer;
+  transition: border-color 0.3s ease, box-shadow 0.2s ease;
+  width: 100%;
+  max-width: 200px;
+  display: block;
+  margin-top: 10px;
+}
+
+select:hover,
+select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+  outline: none;
+}
+
+option {
+  padding: 10px;
 }
 
 #root {
@@ -89,4 +155,35 @@
 
 .read-the-docs {
   color: #888;
+}
+
+select,
+input[type="number"] {
+  background-color: #ffffff;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  color: #495057;
+  width: 100%;
+  max-width: 200px;
+  display: block;
+  margin-top: 10px;
+  box-sizing: border-box;
+}
+
+select:hover,
+select:focus,
+input[type="number"]:hover,
+input[type="number"]:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+  outline: none;
+}
+
+.flip-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
